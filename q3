@@ -1,0 +1,24 @@
+//max and min array
+#include <stdio.h>
+#include <limits.h>
+int main(){
+    int max = INT_MIN;
+    int min = INT_MAX;
+    int x; //size of array
+    printf("enter size of array : \n");
+    scanf("%d",&x);
+    int arr[x];
+    for (int i=0;i<x;i++){
+        printf("arr[%d] : \n", i);
+        scanf("%d",&arr[i]);
+        if (arr[i]>max){
+            max=arr[i];
+        }
+        if (arr[i]<min){
+            min=arr[i];
+        }
+    }
+    printf("max : %d \n", max);
+    printf("min : %d \n", min);
+    return 0;   
+}
